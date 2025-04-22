@@ -1,0 +1,76 @@
+/* Login.css */
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+  }
+  
+  .login-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .login-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  .login-form input:focus {
+    outline: none;
+    border-color: #075e54;
+  }
+  
+  .login-form button {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #075e54;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .login-form button:hover {
+    background-color: #128C7E;
+  }
+  
+  .login-form input::placeholder {
+    color: #888;
+  }
+  
+  .login-form a {
+    text-decoration: none;
+    color: #075e54;
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+  }
+  
+  @media (max-width: 768px) {
+    .login-form {
+      padding: 20px;
+      width: 90%;
+    }
+  }
+  

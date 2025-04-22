@@ -1,0 +1,153 @@
+/* Chat.css */
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    background-color: #075E54;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+  }
+  
+  .header h3 {
+    margin: 0;
+  }
+  
+  .chat-selection {
+    background-color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chat-selection label {
+    font-size: 16px;
+  }
+  
+  .select-user {
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .chat-window {
+    background-color: white;
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  
+  .chat-log {
+    flex-grow: 1;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    max-height: 400px;
+    overflow-y: scroll;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chat-log div {
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 8px;
+    word-wrap: break-word;
+  }
+  
+  .chat-log .sender {
+    background-color: #e4f1fe;
+    text-align: left;
+  }
+  
+  .chat-log .receiver {
+    background-color: #dfffd6;
+    text-align: right;
+  }
+  
+  .chat-input-container {
+    display: flex;
+    padding: 10px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+  }
+  
+  .chat-input {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  
+  .send-button {
+    background-color: #075E54;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .send-button:hover {
+    background-color: #128C7E;
+  }
+  
+  .select-user:focus, .chat-input:focus {
+    outline: none;
+    border-color: #075E54;
+  }
+  
+  @media (max-width: 768px) {
+    .chat-container {
+      height: auto;
+    }
+  
+    .chat-log {
+      max-height: 250px;
+    }
+  }
+  
+
+  /* Styling for the Logout Button */
+.logout-button {
+    background-color: #f44336; /* Red background */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 20px;
+    max-width: fit-content;
+  }
+  
+  .logout-button:hover {
+    background-color: #e53935; /* Darker red when hovering */
+  }
+  
+  .logout-button:focus {
+    outline: none; /* Remove outline on focus */
+  }
+  
+  .logout-button:active {
+    background-color: #d32f2f; /* Even darker red when clicked */
+  }
+  
+ 
